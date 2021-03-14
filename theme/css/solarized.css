@@ -21,36 +21,97 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--base03);
-        color: var(--base0);
+    :root {
+        --background: var(--base03);
+        --highlight: var(--base02);
+        --primary: var(--base0);
+        --secondary: var(--base01);
     }
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: var(--base3);
-        color: var(--base00);
+    :root {
+        --background: var(--base3);
+        --highlight: var(--base2);
+        --primary: var(--base00);
+        --secondary: var(--base1);
     }
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary);
+    height: 100%;
 }
 
 a {
     color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 a:visited {
     color: var(--cyan);
 }
 
-body {
+.container {
+    display: flex;
     margin: 1em auto;
-    max-width: 40em;
     padding: 0 1em;
-    font-family: sans-serif;
-    line-height: 2rem;
+    justify-content: center;
+    align-content: center;
+    max-width: 80em;
 }
 
-header nav ul,
-header nav li {
+.content {
+    max-width: 40em;
+    font-family: sans-serif;
+    line-height: 2em;
+    flex: 0 3 auto;
+}
+
+.menu {
+    justify-content: left;
+    align-content: left;
+    overflow: auto;
+    flex: 0 1 auto;
+}
+
+.menu ul {
+    margin: 1em;
+    padding: 1em;
+}
+
+.menu li {
+    display: block;
+}
+
+.menu li a {
+    display: block;
+    padding: 1em;
+}
+
+.menu li a:hover {
+    background-color: var(--highlight);
+    text-decoration: none;
+}
+
+footer {
+    margin: 1em auto;
+    padding: 0 1em;
+    bottom: 0;
+    text-align: center;
+    color: var(--secondary);
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    margin: 0 1em;
     display: inline-block;
 }
