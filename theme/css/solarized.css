@@ -67,7 +67,7 @@ a:visited {
 }
 
 .content {
-    max-width: 40em;
+    width: 40em;
     font-family: sans-serif;
     line-height: 2em;
     flex: 0 3 auto;
