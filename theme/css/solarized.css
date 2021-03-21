@@ -42,6 +42,9 @@ body {
     background-color: var(--background);
     color: var(--primary);
     height: 100%;
+    margin: 1em auto;
+    font-family: sans-serif;
+    max-width: 40em;
 }
 
 a {
@@ -57,60 +60,43 @@ a:visited {
     color: var(--cyan);
 }
 
-.container {
+main, header, nav, footer {
+    border-bottom: 1px solid var(--secondary);
+}
+
+header {
     display: flex;
-    margin: 1em auto;
-    padding: 0 1em;
-    justify-content: center;
-    align-content: center;
-    max-width: 80em;
-    line-height: 2em;
-    font-family: sans-serif;
+    align-items: center;
 }
 
-.content {
-    width: 40em;
-    flex: 0 3 auto;
-    padding: 0 2em;
-}
-
-.menu {
-    overflow: auto;
-    flex: 0 1 auto;
-}
-
-.menu ul {
-    margin: 1em;
+header p {
     padding: 1em;
 }
 
-.menu li {
-    display: block;
+nav li {
+    display: inline-block;
 }
 
-.menu li a {
-    display: block;
+nav li a {
     padding: 1em;
 }
 
-.menu li a:hover {
+nav li a:hover {
     background-color: var(--highlight);
     text-decoration: none;
 }
 
+main {
+    line-height: 2em;
+    padding: 1em 0;
+}
+
 footer {
-    margin: 1em auto;
-    padding: 0 1em;
-    bottom: 0;
     text-align: center;
     color: var(--secondary);
 }
 
-footer ul {
-    padding: 0;
-}
-
 footer li {
-    margin: 0 1em;
+    padding: 0 1em;
     display: inline-block;
 }
