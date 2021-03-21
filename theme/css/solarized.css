@@ -71,12 +71,12 @@ a:visited {
 .content {
     width: 40em;
     flex: 0 3 auto;
+    padding: 0 4em;
 }
 
 .menu {
     overflow: auto;
     flex: 0 1 auto;
-    padding: 0 4em;
 }
 
 .menu ul {
