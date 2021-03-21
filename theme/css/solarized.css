@@ -64,20 +64,19 @@ a:visited {
     justify-content: center;
     align-content: center;
     max-width: 80em;
+    line-height: 2em;
+    font-family: sans-serif;
 }
 
 .content {
     width: 40em;
-    font-family: sans-serif;
-    line-height: 2em;
     flex: 0 3 auto;
 }
 
 .menu {
-    justify-content: left;
-    align-content: left;
     overflow: auto;
     flex: 0 1 auto;
+    padding: 0 4em;
 }
 
 .menu ul {
