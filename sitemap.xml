@@ -4,6 +4,12 @@
         <loc>https://ferki.github.io/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
+        <lastmod>2021-08-07</lastmod>
+    </url>
+    <url>
+        <loc>https://ferki.github.io/pages/contact.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
         <lastmod>2021-05-12</lastmod>
     </url>
     <url>
@@ -17,6 +23,12 @@
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         <lastmod>2021-03-30</lastmod>
+    </url>
+    <url>
+        <loc>https://ferki.github.io/pages/services.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2021-08-07</lastmod>
     </url>
 </urlset>
 
