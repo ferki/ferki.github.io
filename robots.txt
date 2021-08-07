@@ -1,5 +1,7 @@
 Sitemap: https://ferki.github.io/sitemap.xml
 User-Agent: *
 Disallow:
+User-agent: ia_archiver
+Disallow: /
 
 
