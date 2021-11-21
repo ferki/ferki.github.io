@@ -26,6 +26,7 @@
         --highlight: var(--base02);
         --primary: var(--base0);
         --secondary: var(--base01);
+        --emphasized: var(--base1);
     }
 }
 
@@ -35,6 +36,7 @@
         --highlight: var(--base2);
         --primary: var(--base00);
         --secondary: var(--base1);
+        --emphasized: var(--base01);
     }
 }
 
@@ -42,9 +44,19 @@ body {
     background-color: var(--background);
     color: var(--primary);
     height: 100%;
-    margin: 1em auto;
+    margin: 1rem auto;
+    padding: 0 1rem;
     font-family: sans-serif;
-    max-width: 48em;
+    max-width: 48rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--emphasized);
 }
 
 a {
@@ -57,10 +69,13 @@ a:hover {
 }
 
 a:visited {
-    color: var(--cyan);
+    color: var(--violet);
 }
 
-main, header, nav, footer {
+main,
+header,
+nav,
+footer {
     border-bottom: 1px solid var(--secondary);
 }
 
