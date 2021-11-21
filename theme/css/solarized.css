@@ -88,6 +88,12 @@ header p {
     padding: 1em;
 }
 
+footer ul,
+nav ul {
+    padding: 0;
+    line-height: 2em;
+}
+
 nav li {
     display: inline-block;
 }
