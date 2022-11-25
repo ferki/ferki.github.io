@@ -115,6 +115,7 @@ main {
 footer {
     text-align: center;
     color: var(--secondary);
+    font-size: small;
 }
 
 footer li {
