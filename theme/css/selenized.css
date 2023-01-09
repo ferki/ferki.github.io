@@ -79,7 +79,7 @@ body {
     color: var(--primary);
     height: 100%;
     margin: 1rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
     font-family: sans-serif;
     max-width: 40rem;
 }
