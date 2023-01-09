@@ -1,0 +1,192 @@
+:root {
+    color-scheme: light dark;
+
+    --background: var(--bg_0);
+    --highlight: var(--bg_1);
+    --primary: var(--fg_0);
+    --secondary: var(--dim_0);
+    --emphasized: var(--fg_1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg_0: #103c48;
+        --bg_1: #174956;
+        --bg_2: #325b66;
+        --dim_0: #72898f;
+        --fg_0: #adbcbc;
+        --fg_1: #cad8d9;
+
+        --red: #fa5750;
+        --green: #75b938;
+        --yellow: #dbb32d;
+        --blue: #4695f7;
+        --magenta: #f275be;
+        --cyan: #41c7b9;
+        --orange: #ed8649;
+        --violet: #af88eb;
+
+        --br_red: #ff665c;
+        --br_green: #84c747;
+        --br_yellow: #ebc13d;
+        --br_blue: #58a3ff;
+        --br_magenta: #ff84cd;
+        --br_cyan: #53d6c7;
+        --br_orange: #fd9456;
+        --br_violet: #bd96fa;
+    }
+
+    img {
+        filter: grayscale(15%);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg_0: #fbf3db;
+        --bg_1: #e9e4d0;
+        --bg_2: #cfcebe;
+        --dim_0: #909995;
+        --fg_0: #53676d;
+        --fg_1: #3a4d53;
+        --red: #d2212d;
+        --green: #489100;
+        --yellow: #ad8900;
+        --blue: #0072d4;
+        --magenta: #ca4898;
+        --cyan: #009c8f;
+        --orange: #c25d1e;
+        --violet: #8762c6;
+        --br_red: #cc1729;
+        --br_green: #428b00;
+        --br_yellow: #a78300;
+        --br_blue: #006dce;
+        --br_magenta: #c44392;
+        --br_cyan: #00978a;
+        --br_orange: #bc5819;
+        --br_violet: #825dc0;
+
+        --background: var(--bg_0);
+        --highlight: var(--bg_1);
+        --primary: var(--fg_0);
+        --secondary: var(--dim_0);
+        --emphasized: var(--fg_1);
+    }
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary);
+    height: 100%;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    font-family: sans-serif;
+    max-width: 40rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--emphasized);
+}
+
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    list-style-position: outside;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--violet);
+}
+
+main,
+header,
+nav {
+    border-bottom: 1px solid var(--secondary);
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+}
+
+header h1 a,
+header h1 a:hover,
+header h1 a:visited {
+    color: var(--emphasized);
+    text-decoration: none;
+}
+
+header p {
+    padding: 1em;
+}
+
+footer ul,
+nav ul {
+    padding: 0;
+    line-height: 2em;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    padding: 1em;
+}
+
+nav li a:hover {
+    background-color: var(--highlight);
+    text-decoration: none;
+}
+
+nav li a.active {
+    background-color: var(--highlight);
+}
+
+main {
+    line-height: 2em;
+    padding: 1em 0;
+}
+
+figure#profile {
+    float: left;
+    margin: 1em 1em 0 0;
+}
+
+footer {
+    text-align: center;
+    color: var(--secondary);
+    font-size: small;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer li:not(:last-child)::after {
+    content: " ·";
+}
