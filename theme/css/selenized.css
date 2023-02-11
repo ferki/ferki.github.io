@@ -1,11 +1,5 @@
 :root {
     color-scheme: light dark;
-
-    --background: var(--bg_0);
-    --highlight: var(--bg_1);
-    --primary: var(--fg_0);
-    --secondary: var(--dim_0);
-    --emphasized: var(--fg_1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +28,12 @@
         --br_cyan: #53d6c7;
         --br_orange: #fd9456;
         --br_violet: #bd96fa;
+
+        --background: var(--bg_0);
+        --highlight: var(--bg_1);
+        --primary: var(--fg_0);
+        --secondary: var(--dim_0);
+        --emphasized: var(--fg_1);
     }
 
     img {
