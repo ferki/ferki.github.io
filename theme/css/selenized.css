@@ -1,5 +1,11 @@
 :root {
     color-scheme: light dark;
+
+    --background: var(--bg_0);
+    --highlight: var(--bg_1);
+    --primary: var(--fg_0);
+    --secondary: var(--dim_0);
+    --emphasized: var(--fg_1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,12 +34,6 @@
         --br_cyan: #53d6c7;
         --br_orange: #fd9456;
         --br_violet: #bd96fa;
-
-        --background: var(--bg_0);
-        --highlight: var(--bg_1);
-        --primary: var(--fg_0);
-        --secondary: var(--dim_0);
-        --emphasized: var(--fg_1);
     }
 
     img {
@@ -49,6 +49,7 @@
         --dim_0: #909995;
         --fg_0: #53676d;
         --fg_1: #3a4d53;
+
         --red: #d2212d;
         --green: #489100;
         --yellow: #ad8900;
@@ -57,6 +58,7 @@
         --cyan: #009c8f;
         --orange: #c25d1e;
         --violet: #8762c6;
+
         --br_red: #cc1729;
         --br_green: #428b00;
         --br_yellow: #a78300;
@@ -65,12 +67,6 @@
         --br_cyan: #00978a;
         --br_orange: #bc5819;
         --br_violet: #825dc0;
-
-        --background: var(--bg_0);
-        --highlight: var(--bg_1);
-        --primary: var(--fg_0);
-        --secondary: var(--dim_0);
-        --emphasized: var(--fg_1);
     }
 }
 
@@ -78,8 +74,8 @@ body {
     background-color: var(--background);
     color: var(--primary);
     height: 100%;
-    margin: 1rem auto;
-    padding: 0 2rem;
+    margin: 0 auto;
+    padding: 2rem;
     font-family: sans-serif;
     max-width: 40rem;
 }
@@ -93,12 +89,12 @@ h6 {
     color: var(--emphasized);
 }
 
-p + h1,
-p + h2,
-p + h3,
-p + h4,
-p + h5,
-p + h6 {
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
     margin-top: 2em;
     margin-bottom: 1em;
 }
@@ -130,6 +126,8 @@ nav {
 
 header {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: baseline;
 }
 
@@ -140,13 +138,14 @@ header h1 a:visited {
     text-decoration: none;
 }
 
+header h1,
 header p {
-    padding: 1em;
+    margin: 0 0 0.5em;
 }
 
 footer ul,
 nav ul {
-    padding: 0;
+    margin: 0.5em 0 0.5em;
     line-height: 2em;
 }
 
@@ -155,7 +154,7 @@ nav li {
 }
 
 nav li a {
-    padding: 1em;
+    padding: 0.5em;
 }
 
 nav li a:hover {
@@ -169,7 +168,6 @@ nav li a.active {
 
 main {
     line-height: 2em;
-    padding: 1em 0;
 }
 
 figure#profile {
@@ -180,7 +178,7 @@ figure#profile {
 footer {
     text-align: center;
     color: var(--secondary);
-    font-size: small;
+    font-size: smaller;
 }
 
 footer li {
