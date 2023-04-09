@@ -74,7 +74,7 @@ body {
     background-color: var(--background);
     color: var(--primary);
     height: 100%;
-    margin: 0 auto;
+    margin: auto;
     padding: 2rem;
     font-family: sans-serif;
     max-width: 40rem;
