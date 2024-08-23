@@ -188,3 +188,23 @@ footer li {
 footer li:not(:last-child)::after {
     content: " ·";
 }
+
+table.qrcode {
+    padding: 1rem 0;
+    border-width: 0;
+    border-spacing: 0;
+}
+
+.qrcode_off,
+.qrcode_on {
+    width: 1rem;
+    height: 1rem;
+}
+
+.qrcode_off {
+    background-color: var(--background);
+}
+
+.qrcode_on {
+    background-color: var(--primary);
+}
