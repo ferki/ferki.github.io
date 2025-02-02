@@ -1,4 +1,4 @@
-Sitemap: https://ferki.github.io/sitemap.xml
+Sitemap: https://ferki.it/sitemap.xml
 User-Agent: *
 Disallow:
 User-agent: ia_archiver
