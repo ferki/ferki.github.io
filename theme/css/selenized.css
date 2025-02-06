@@ -171,8 +171,12 @@ main {
 }
 
 figure#profile {
-    float: left;
-    margin: 1em 1em 0 0;
+    float: right;
+    margin: 0.5em;
+}
+
+figure#profile img {
+    border-radius: 50%;
 }
 
 footer {
