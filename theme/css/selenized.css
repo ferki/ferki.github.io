@@ -203,6 +203,14 @@ table.qrcode {
     border-spacing: 0;
 }
 
+.offer {
+    color: var(--emphasized);
+    background-color: var(--highlight);
+    margin-left: -1em;
+    padding-left: 1em;
+    border-left: solid var(--red);
+}
+
 .qrcode_off,
 .qrcode_on {
     width: 1rem;
