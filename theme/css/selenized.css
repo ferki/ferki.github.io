@@ -84,26 +84,6 @@ body {
     max-width: 40rem;
 }
 
-h1[id] > a::before,
-h2[id] > a::before,
-h3[id] > a::before,
-h4[id] > a::before,
-h5[id] > a::before,
-h6[id] > a::before {
-    margin-left: -1em;
-    content: "⚓";
-    visibility: hidden;
-}
-
-h1[id] > a:hover::before,
-h2[id] > a:hover::before,
-h3[id] > a:hover::before,
-h4[id] > a:hover::before,
-h5[id] > a:hover::before,
-h6[id] > a:hover::before {
-    visibility: visible;
-}
-
 h1 > a,
 h1 > a:visited,
 h2 > a,
