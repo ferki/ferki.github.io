@@ -209,6 +209,14 @@ table.qrcode {
     border-spacing: 0;
 }
 
+blockquote {
+    color: var(--emphasized);
+    background-color: var(--highlight);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+}
+
 .offer {
     color: var(--emphasized);
     background-color: var(--highlight);
