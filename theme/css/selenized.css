@@ -238,3 +238,23 @@ blockquote {
 .qrcode_on {
     background-color: var(--primary);
 }
+
+ul.checkmark {
+    list-style-type: "✅ ";
+}
+
+li.peeking {
+    list-style-type: "🫣 ";
+}
+
+li.hourglass {
+    list-style-type: "⏳ ";
+}
+
+li.money {
+    list-style-type: "💸 ";
+}
+
+li.chart {
+    list-style-type: "📈 ";
+}
