@@ -72,6 +72,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding: 3em;
 }
 
 body {
@@ -81,7 +82,7 @@ body {
     margin: auto;
     padding: 2rem;
     font-family: sans-serif;
-    max-width: 43rem;
+    max-width: 47rem;
 }
 
 h1 > a,
@@ -128,10 +129,30 @@ a:visited {
     color: var(--violet);
 }
 
+header,
+nav,
 main,
+footer {
+    margin: auto;
+}
+
 header,
 nav {
     border-bottom: 1px solid var(--secondary);
+}
+
+footer {
+    border-top: 1px solid var(--secondary);
+}
+
+main {
+    max-width: 43rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
 }
 
 header {
@@ -150,12 +171,12 @@ header h1 a:visited {
 
 header h1,
 header p {
-    margin: 0 0 0.5em;
+    margin: 0 1em 0.5em;
 }
 
 footer ul,
 nav ul {
-    margin: 0.5em 0 0.5em;
+    margin: 0.5em 1.5em;
     line-height: 2em;
 }
 
