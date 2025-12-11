@@ -188,8 +188,11 @@ nav li a {
     padding: 0.5em;
 }
 
-nav li a:hover {
+nav li:hover {
     background-color: var(--highlight);
+}
+
+nav li:hover a {
     text-decoration: none;
 }
 
