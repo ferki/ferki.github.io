@@ -200,6 +200,29 @@ nav li a.active {
     background-color: var(--highlight);
 }
 
+.dropdown {
+    display: inline-block;
+}
+
+.items {
+    display: none;
+    position: absolute;
+    background-color: var(--background);
+    border: 1px solid var(--secondary);
+}
+
+.dropdown:hover .items {
+    display: block;
+}
+
+.items ul {
+    margin: 0.5em;
+}
+
+.items li {
+    display: block;
+}
+
 main {
     line-height: 2em;
 }
