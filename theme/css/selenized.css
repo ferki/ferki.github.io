@@ -213,8 +213,10 @@ nav li a.active {
     border: 1px solid var(--secondary);
 }
 
-.dropdown:hover .items {
-    display: block;
+@media (pointer: fine) {
+    .dropdown:hover .items {
+        display: block;
+    }
 }
 
 .items ul {
