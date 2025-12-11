@@ -80,9 +80,7 @@ body {
     color: var(--primary);
     height: 100%;
     margin: auto;
-    padding: 2rem;
     font-family: sans-serif;
-    max-width: 47rem;
 }
 
 h1 > a,
@@ -133,7 +131,9 @@ header,
 nav,
 main,
 footer {
+    max-width: 43rem;
     margin: auto;
+    padding-left: 2rem;
 }
 
 header,
@@ -153,6 +153,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: var(--background);
+    z-index: 1;
 }
 
 header {
@@ -171,12 +172,12 @@ header h1 a:visited {
 
 header h1,
 header p {
-    margin: 0 1em 0.5em;
+    margin: 0.5em 0;
 }
 
 footer ul,
 nav ul {
-    margin: 0.5em 1.5em;
+    margin: 0.5em 0em;
     line-height: 2em;
 }
 
